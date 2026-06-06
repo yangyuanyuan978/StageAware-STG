@@ -1,0 +1,231 @@
+# ============================================================
+
+# Project-specific ignores
+
+# ============================================================
+
+# IDE / editor
+
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Training outputs
+
+runs/
+work_dir/
+output/
+outputs/
+checkpoints/
+checkpoint/
+weights/
+pretrained/
+logs/
+log/
+tensorboard/
+tensorboard_logs/
+wandb/
+
+# Temporary experiment folders
+
+tmp/
+temp/
+debug/
+cache/
+.cache/
+
+# Saved model files
+
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.jit
+*.engine
+
+# Score files and intermediate predictions
+
+*_score.pkl
+*_scores.pkl
+score.pkl
+scores.pkl
+prediction.pkl
+predictions.pkl
+result.pkl
+results.pkl
+
+# Visualization outputs
+
+vis/
+visualization/
+figures/
+figure/
+plots/
+plot/
+*.pdf
+*.eps
+*.svg
+*.png
+*.jpg
+*.jpeg
+
+# Keep paper-ready figures manually if needed
+
+# !assets/
+
+# !assets/*.png
+
+# !assets/*.pdf
+
+# Dataset files
+
+data/
+dataset/
+datasets/
+raw_data/
+processed_data/
+
+# NTU / Kinetics common data folders
+
+nturgbd_raw/
+kinetics_raw/
+ntu/
+ntu60/
+kinetics/
+Skeleton-Kinetics/
+
+# Large data formats
+
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.jsonl
+*.h5
+*.hdf5
+*.mat
+*.csv
+
+# Allow small metadata files if needed
+
+# !data/README.md
+
+# !docs/*.md
+
+# ============================================================
+
+# Python
+
+# ============================================================
+
+# Byte-compiled / optimized / DLL files
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# C extensions
+
+*.so
+*.pyd
+
+# Distribution / packaging
+
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+
+*.manifest
+*.spec
+
+# Unit test / coverage
+
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Type checking / linting
+
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# Jupyter Notebook
+
+.ipynb_checkpoints/
+
+# Environments
+
+.env
+.env.*
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+conda-meta/
+
+# Spyder / Rope
+
+.spyderproject
+.spyproject
+.ropeproject
+
+# Sphinx / docs build
+
+docs/_build/
+site/
+
+# Logs
+
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============================================================
+
+# System / OS
+
+# ============================================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+

@@ -1,0 +1,37 @@
+# feeder
+feeder: feeders.feeder.Feeder
+test_feeder_args:
+  data_path: ./data/kinetics_raw/kinetics-skeleton/val_data_bone.npy
+  label_path: ./data/kinetics_raw/kinetics-skeleton/val_label.pkl
+  debug: False
+
+# model
+model: model.mg_stgm_agcn.Model
+model_args:
+  num_class: 400
+  num_person: 2
+  num_point: 18
+  graph: graph.kinetics.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+  use_mg: True
+  use_stgm: True          # 使用选择性时序门控模块 (创新点2)
+  stgm_layers: [9, 10]  # 保持不变
+  mg_mode: learned
+  mg_fusion: dynamic_subset
+  gate_reduction: 8
+  gate_dropout: 0.1
+  pa_lambda: 0.2
+  align_norm: True
+  use_checkpoint: False
+
+# test 
+phase: test
+device: 0
+test_batch_size: 64
+weights: ./runs/ki_mg_stgm_agcn_bone_run1_seed1-64-122070.pt
+
+
+work_dir: ./work_dir/kinetics/mg_stgm_agcn_bone_test
+model_saved_name: ./runs/ki_mg_stgm_agcn_bone_test  
+save_score: True

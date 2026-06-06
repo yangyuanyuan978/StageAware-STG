@@ -1,0 +1,36 @@
+work_dir: ./work_dir/ntu/xsub/mg_stgm_agcn_test_bone
+model_saved_name: ./runs/ntu_cs_mg_stgm_agcn_test_bone
+save_score: True
+
+# feeder
+feeder: feeders.feeder.Feeder
+test_feeder_args:
+  data_path: ./data/ntu/xsub/val_data_bone.npy
+  label_path: ./data/ntu/xsub/val_label.pkl
+
+  debug: False
+# model - MG-STGM-AGCN
+model: model.mg_stgm_agcn.Model
+model_args:
+  num_class: 60
+  num_point: 25
+  num_person: 2
+  graph: graph.ntu_rgb_d.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+  use_mg: True
+  use_stgm: True
+  stgm_layers: [9,10]
+  mg_mode: learned
+  mg_fusion: dynamic_subset
+  gate_reduction: 8
+  gate_dropout: 0.1
+  pa_lambda: 0.2
+  align_norm: True
+  use_checkpoint: False     # 测试时不需要
+
+# testing
+device: [0, 1, 2]
+test_batch_size: 256
+phase: test
+weights: ./runs/ntu_cs_mg_stgm_agcn_bone_run1_seed1-49-31300.pt
