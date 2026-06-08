@@ -350,12 +350,12 @@ Example result table format:
 
 | Dataset           | Protocol | Stream | Method   | Accuracy     |
 | ----------------- | -------- | ------ | -------- | ------------ |
-| NTU RGB+D 60      | X-Sub    | Joint  | Baseline | 86.32±0.58   |
-| NTU RGB+D 60      | X-Sub    | Joint  | Ours     | 86.40±0.13   |
-| NTU RGB+D 60      | X-View   | Joint  | Baseline | 93.60±0.29   |
-| NTU RGB+D 60      | X-View   | Joint  | Ours     | 93.70±0.14   |
-| Kinetics-Skeleton | Val      | Joint  | Baseline | to be filled |
-| Kinetics-Skeleton | Val      | Joint  | Ours     | to be filled |
+| NTU RGB+D 60      | X-Sub    | J+B  | Baseline | 88.64±0.44   |
+| NTU RGB+D 60      | X-Sub    | J+B  | Ours     | 88.65±0.04   |
+| NTU RGB+D 60      | X-View   | J+B  | Baseline | 94.96±0.11   |
+| NTU RGB+D 60      | X-View   | J+B  | Ours     | 95.13±0.12   |
+| Kinetics-Skeleton | Val      | J+B  | Baseline | 36.66±0.13   |
+| Kinetics-Skeleton | Val      | J+B  | Ours     | 36.23±0.34   |
 
 # Citation
 
@@ -384,5 +384,4 @@ For questions about this repository, please contact:
 ```
 Name: Yuanyuan Yang
 Email: 24213037560005@ymu.edu.cn
-Repository: to be filled
 ```
