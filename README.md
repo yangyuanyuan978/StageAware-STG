@@ -2,7 +2,7 @@
 
 Official implementation of the paper:
 
-**Stage-Aware Spatial-Temporal Granularity Learning for Efficient Skeleton-Based Action Recognition**
+**Stage-Aware Spatial-Temporal Placement for Skeleton-Based Action Recognition**
 
 This repository is built on a 2s-AGCN-style training and evaluation pipeline. The main purpose of this release is to provide a minimal reproducible implementation of the proposed stage-aware skeleton action recognition model, including data processing, training/testing code, model definition, and configuration files for NTU RGB+D 60 and Kinetics-Skeleton.
 
@@ -176,7 +176,7 @@ model_args:
   mg_fusion: dynamic_subset
   gate_reduction: 8
   gate_dropout: 0.1
-  pa_lambda: 0.2
+  pa_lambda: 0.1
 ```
 
 The baseline AGCN-style model can be obtained by disabling the proposed components:
@@ -361,18 +361,15 @@ Example result table format:
 
 Please cite the following paper if you use this repository in your reseach.
 
-    @misc{stageaware2026,
-      title        = {Stage-Aware Spatial-Temporal Granularity Learning for Efficient Skeleton-Based Action Recognition},
-      author       = {Your Name and Coauthors},
-      year         = {2026},
-      note         = {Manuscript submitted to The Visual Computer}
-    }
-    @inproceedings{2sagcn2019cvpr,  
-          title     = {Two-Stream Adaptive Graph Convolutional Networks for Skeleton-Based Action Recognition},  
-          author    = {Lei Shi and Yifan Zhang and Jian Cheng and Hanqing Lu},  
-          booktitle = {CVPR},  
-          year      = {2019},  
-    }
+    @article{Yang2026StageAware,
+  title   = {Stage-Aware Spatial-Temporal Placement for Skeleton-Based Action Recognition},
+  author  = {Yang, Yuanyuan and Zhang, Zhengwen and
+             Yang, Cheng and Yu, Yangtao and
+             Lonapalawong, Supaporn},
+  journal = {Pattern Recognition Letters},
+  year    = {2026},
+  doi     = {10.1016/j.patrec.2026.10.020}
+}
 # Acknowledgement
 
 This repository follows the general training and data-processing style of 2s-AGCN. We thank the authors of 2s-AGCN and ST-GCN for releasing their code and preprocessing pipelines.
