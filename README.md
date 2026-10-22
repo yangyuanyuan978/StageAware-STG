@@ -1,4 +1,4 @@
-# Stage-Aware Spatial-Temporal Granularity Learning
+# Stage-Aware Spatial–Temporal Placement for Skeleton-Based Action Recognition
 
 Official implementation of the paper:
 
