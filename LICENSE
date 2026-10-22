@@ -13,8 +13,8 @@ The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
 This repository provides code and configuration files for reproducing the
-experiments associated with the manuscript "Stage-Aware Spatial-Temporal
-Granularity Learning for Efficient Skeleton-Based Action Recognition".
+experiments associated with the manuscript "Stage-Aware Spatial–Temporal Placement 
+for Skeleton-Based Action Recognition".
 
 The datasets used by this project, including NTU RGB+D 60 and
 Kinetics-Skeleton, are not distributed with this repository. Users must obtain
