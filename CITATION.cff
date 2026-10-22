@@ -1,52 +1,46 @@
 cff-version: 1.2.0
 message: "If you use this code or find this repository helpful, please cite the associated manuscript."
-title: "Stage-Aware Spatial-Temporal Granularity Learning for Efficient Skeleton-Based Action Recognition"
+title: "Stage-Aware Spatial–Temporal Placement for Skeleton-Based Action Recognition"
 type: software
 
 authors:
+  - family-names: "Yang"
+    given-names: "Yuanyuan"
+    affiliation: "Yunnan Minzu University"
+  - family-names: "Zhang"
+    given-names: "Zhengwen"
+    affiliation: "Yunnan Minzu University"
+  - family-names: "Yang"
+    given-names: "Cheng"
+    affiliation: "Yunnan Minzu University"
+  - family-names: "Yu"
+    given-names: "Yangtao"
+    affiliation: "Yunnan Minzu University"
+  - family-names: "Lonapalawong"
+    given-names: "Supaporn"
+    affiliation: "Yunnan Minzu University"
 
-* family-names: "Yang"
-  given-names: "Yuanyuan"
-  affiliation: "Yunnan Minzu University"
-* family-names: "Zhang"
-  given-names: "Zhengwen"
-  affiliation: "Yunnan Minzu University"
-* family-names: "Yang"
-  given-names: "Cheng"
-  affiliation: "Yunnan Minzu University"
-* family-names: "Yu"
-  given-names: "Yangtao"
-  affiliation: "Yunnan Minzu University"
-* family-names: "Supaporn"
-  given-names: "YLonapalawong"
-  affiliation: "Yunnan Minzu University"
-
-repository-code: "https://github.com/your-username/your-repository"
-url: "https://github.com/your-username/your-repository"
+repository-code: "https://github.com/yangyuanyuan978/StageAware-STG"
+url: "https://github.com/yangyuanyuan978/StageAware-STG"
 license: "MIT"
 
 version: "1.0.0"
-date-released: "2026-06-03"
+date-released: 2026-06-03
 
 preferred-citation:
-type: article
-title: "Stage-Aware Spatial-Temporal Granularity Learning for Efficient Skeleton-Based Action Recognition"
-authors:
-- family-names: "Yang"
-given-names: "Yuanyuan"
-affiliation: "Yunnan Minzu University"
-- family-names: "Zhang"
-given-names: "Zhengwen"
-affiliation: "Yunnan Minzu University"
-- family-names: "Yang"
-given-names: "Cheng"
-affiliation: "Yunnan Minzu University"
-- family-names: "Yu"
-given-names: "Yangtao"
-affiliation: "Yunnan Minzu University"
-- family-names: "Supaporn"
-given-names: "YLonapalawong"
-affiliation: "Yunnan Minzu University"
-journal: "The Visual Computer"
-year: 2026
-status: "submitted"
+  type: article
+  title: "Stage-Aware Spatial–Temporal Placement for Skeleton-Based Action Recognition"
+  authors:
+    - family-names: "Yang"
+      given-names: "Yuanyuan"
+    - family-names: "Zhang"
+      given-names: "Zhengwen"
+    - family-names: "Yang"
+      given-names: "Cheng"
+    - family-names: "Yu"
+      given-names: "Yangtao"
+    - family-names: "Lonapalawong"
+      given-names: "Supaporn"
+  journal: "Pattern Recognition Letters"
+  year: 2026
+  doi: "10.1016/j.patrec.2026.10.020"
